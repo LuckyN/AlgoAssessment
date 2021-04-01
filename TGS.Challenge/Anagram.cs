@@ -1,3 +1,5 @@
+using System.Collections.Immutable;
+
 namespace TGS.Challenge
 {
   /*
@@ -24,6 +26,15 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
+            //sort word1 and word2 into sorted arrays
+            char[] wd1 = word1.ToCharArray();
+            char[] wd2 = word2.ToCharArray();
+            //the sorted characters should be sorted in descendig/ascending order
+            //To ensure that my strings are sorted the same I will create a function
+
+            //Create a string 
+            string Arrayword1 = word1.ToCharArray().ToString();
+
         return false;
       }
     }
