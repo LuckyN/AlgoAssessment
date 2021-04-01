@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Immutable;
 
 namespace TGS.Challenge
@@ -26,10 +27,13 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
-            //sort word1 and word2 into sorted arrays
-            char[] wd1 = word1.ToCharArray();
-            char[] wd2 = word2.ToCharArray();
+            //sort word1 and word2 into sorted arrays 
+            //Since the comparison of CAPS and lower case did not work converted everything to lower case
+            char[] wd1 = word1.ToLower().ToCharArray();
+            char[] wd2 = word2.ToLower().ToCharArray();
             //the sorted characters should be sorted in descendig/ascending order
+            Array.Sort(wd1);
+            Array.Sort(wd2);
             //To ensure that my strings are sorted the same I will create a function
 
             //Create a string 
