@@ -34,12 +34,20 @@ namespace TGS.Challenge
             //the sorted characters should be sorted in descendig/ascending order
             Array.Sort(wd1);
             Array.Sort(wd2);
-            //To ensure that my strings are sorted the same I will create a function
+            //Create a string  with the from the sorted strings
+            string Sortedword1 = wd1.ToString();
+            string Sortedword2 = wd2.ToString();
 
-            //Create a string 
-            string Arrayword1 = word1.ToCharArray().ToString();
+            //Compare the characters to see if there eaxactly the same, if there are the same its anagram otherwise no
+            if (Sortedword1 == Sortedword2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
-        return false;
       }
     }
 }
